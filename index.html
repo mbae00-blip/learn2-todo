@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Tasks</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="card">
+    <h1>My Tasks</h1>
+
+    <div class="input-row">
+      <label for="todoInput" class="sr-only">새 할 일</label>
+      <input
+        type="text"
+        id="todoInput"
+        placeholder="새 할 일을 입력하세요..."
+        autocomplete="off"
+        maxlength="100"
+        aria-label="새 할 일 입력"
+      >
+      <button id="addBtn" aria-label="할 일 추가">추가</button>
+    </div>
+
+    <ul id="todoList" aria-label="할 일 목록"></ul>
+
+    <p class="stats" aria-live="polite">
+      완료: <span id="completedCount">0</span> / 총 <span id="totalCount">0</span>개
+    </p>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
